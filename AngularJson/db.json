@@ -1,0 +1,106 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "Grand Hayat",
+      "address": "Pune 4",
+      "email": "Hayat@gmail.com",
+      "services": "Indian",
+      "mobile": 8087808780
+    },
+    {
+      "id": "2",
+      "name": "Le Meridian",
+      "address": "Pune Mumbai highway",
+      "email": "Meridian@gmail.com",
+      "services": "Chinese",
+      "mobile": 9823982398
+    },
+    {
+      "id": "3",
+      "name": "Shereton Grand",
+      "address": "Koregaon park",
+      "email": "GrandInfo@gmail.com",
+      "services": "contenental",
+      "mobile": 7020702070
+    },
+    {
+      "id": "4",
+      "name": "le",
+      "address": "nkklkl",
+      "email": "ke#nkjlklm",
+      "services": "coff",
+      "mobile": 886789
+    },
+    {
+      "id": "5",
+      "name": "hkj",
+      "address": "jlkj",
+      "email": "lkjl",
+      "services": "jk",
+      "mobile": 98797
+    },
+    {
+      "id": 0,
+      "name": "lkj",
+      "address": "jljljop",
+      "email": "jkljklj",
+      "services": "8ujl",
+      "mobile": 989809
+    }
+  ],
+  "signup": [
+    {
+      "name": "Taj",
+      "email": "TajManagement@gmail.com",
+      "mobile": 9977997799,
+      "password": "password@123",
+      "id": "1"
+    },
+    {
+      "name": "Admin",
+      "email": "Marvellous@gmail.com",
+      "mobile": 7020717020,
+      "password": "Admin@123",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Host",
+      "email": "host@gmail.com",
+      "mobile": 7878999978,
+      "password": "Asdf@345"
+    },
+    {
+      "id": "0ba7",
+      "name": "nikit",
+      "email": "nikikubal@gmail.com",
+      "mobile": 78868768979,
+      "password": "adgu96"
+    },
+    {
+      "id": "b048",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "password": ""
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Rahul joshi",
+      "mobile": "9080888998",
+      "id": "a71c"
+    },
+    {
+      "name": "Diksha Thakare",
+      "mobile": "9090809098",
+      "id": "4d69"
+    },
+    {
+      "name": "Sandesh Patil",
+      "mobile": "7899667997",
+      "id": "2704"
+    }
+  ]
+}

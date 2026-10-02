@@ -1,0 +1,8 @@
+<h1>Demonstration of Ngswitch structual directive</h1>
+
+<div [ngSwitch] = "BatchName">
+  <div *ngSwitchCase ="'PPA'">You select PPA batch </div>
+  <div *ngSwitchCase ="'LB'">You select LB batch </div>
+  <div *ngSwitchCase ="'Angular'">You select Angular batch </div>
+  <div *ngSwitchDefault>There is no such batch</div>
+</div>

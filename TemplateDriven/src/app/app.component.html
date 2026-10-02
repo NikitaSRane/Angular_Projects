@@ -1,0 +1,66 @@
+<div class="container mt-4">
+  <h2>Template-Driven Form Example</h2>
+
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="needs-validation">
+    <!-- Name Field -->
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="form-control"
+        [(ngModel)]="user.name"
+        required
+        #name="ngModel"
+        [class.is-invalid]="name.invalid && name.touched"
+      />
+      <div *ngIf="name.invalid && name.touched" class="invalid-feedback">
+        Name is required.
+      </div>
+    </div>
+
+    <!-- Email Field -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        [(ngModel)]="user.email"
+        required
+        email
+        #email="ngModel"
+        [class.is-invalid]="email.invalid && email.touched"
+      />
+      <div *ngIf="email.invalid && email.touched" class="invalid-feedback">
+        Please enter a valid email.
+      </div>
+    </div>
+
+    <!-- Password Field -->
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        [(ngModel)]="user.password"
+        required
+        minlength="6"
+        #password="ngModel"
+        [class.is-invalid]="password.invalid && password.touched"
+      />
+      <div *ngIf="password.invalid && password.touched" class="invalid-feedback">
+        Password must be at least 6 characters long.
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">
+      Submit
+    </button>
+  </form>
+</div>

@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col">
+            <h1 style="color: blueviolet;text-align: center ;">Contact our</h1>
+            <h1 style="text-align: center;">Customer Support Center</h1>
+        </div>
+        <div class="col">
+            <img src="assets/laptop.jpg" class="img-fluid" alt="Laptop">
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <h2 style="text-align: center;">Contact Information</h2>
+        <h3 style="text-align: center;">Please fill out your contact information below.</h3>
+    </div>
+
+    <form [formGroup] = "SupportForm">
+        <div class="form-group">
+            <label>Name<span style="color: red;">*</span> </label>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" formControlName="fname" placeholder="Please fill your First Name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" formControlName="fname" placeholder="Please fill your Last Name">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                    <small class="form-text">First Name</small>
+                </div>
+                <div class="col">
+                    <small class="form-text">Last Name</small>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 10px;"></div>
+
+        <div class="form-group">
+            <label>Email<span style="color: red;">*</span></label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Please fill your Email id">
+        </div>
+        <div class="form-group">
+            <label>Phone<span style="color: red;">*</span></label>
+            <input type="tel" class="form-control" formControlName="phone" placeholder="Please fill your Phone/Mobile number" pattern="[7-9]{1}-[0-9]{9}">
+        </div>
+        <div class="form-group">
+            <label>Address<span style="color: red;">*</span></label>
+            <input type="address" class="form-control" formControlName="address" placeholder="Please fill your address">
+        </div>
+
+    </form>
+</div>

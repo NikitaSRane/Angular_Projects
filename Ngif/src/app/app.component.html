@@ -1,0 +1,27 @@
+<h1>Demonstration of ngIf structural divrective</h1>
+
+<h2>Hello World </h2>
+
+<h2 *ngIf = "true"> Good Morning </h2>
+
+<h2 *ngIf = "false"> Good Night </h2>
+
+<h2 *ngIf = "flag">Angular web developement</h2>
+
+<h2 *ngIf = "veg">Please check below veg menu</h2>
+
+<ng-template #vegMenu>
+  <h2>Paneer Masala</h2>
+  <h2>Paneer handi</h2>
+  <h2>Paneer labab</h2>
+  <h2>Paneer crispy</h2>
+</ng-template>
+
+<ng-template #NonvegMenu>
+  <h2>Chicken Masala</h2>
+  <h2>Chicken gravy</h2>
+  <h2>chiken tikka Masala</h2>
+  <h2>chickan veg Masala</h2>
+</ng-template>
+
+<div *ngIf="Foodoption ; then vegMenu  ; else NonvegMenu "></div>

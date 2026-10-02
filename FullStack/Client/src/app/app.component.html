@@ -1,0 +1,9 @@
+<h2>Demonstration of full stack project</h2>
+<ul *ngFor="let value of message">
+    <li>Batch: {{ value.Batch }}</li>
+    <li>Fees: {{ value.Fees }}</li>
+</ul>
+<ul *ngFor="let value of message">
+    <li>{{ value |json }}</li>
+</ul>
+<router-outlet></router-outlet>
